@@ -14,7 +14,7 @@ jBoxNumber Semplice footer paginatore per chi ha bisogno della costruzione del s
 ```
 
 
-* ## [Demo jBoxNumber](https://mssalvo.github.io/jBoxNumber/index.html)
+* ## [Demo jBoxNumber](https://mssalvo.github.io/jBoxNumber/)
  
  
 __Esempio di istanza jBoxNumber v.1.0.0__
