@@ -1,0 +1,84 @@
+.jboxnumber {
+	line-height: 1.6;
+	font-family: Arial, Georgia, sans-serif;
+	font-size: 14px;
+	box-sizing: initial;
+}
+.jboxnumber:after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+.jboxnumber .jboxnumber-navs {
+	float: left;
+        margin: 0 auto;
+}
+.jboxnumber .jboxnumber-navs ul {
+	float: left;
+	margin: 0 ;
+	padding: 0;
+}
+.jboxnumber .jboxnumber-nav {
+	float: left;
+	margin-left: 10px;
+	font-size: 14px;
+}
+.jboxnumber .jboxnumber-navs li {
+	float: left;
+	border: 1px solid #3b75af;
+	border-right: none;
+	list-style: none;
+}
+.jboxnumber .jboxnumber-navs li>a {
+	min-width: 40px;
+	height: 38px;
+	line-height: 38px;
+	display: block;
+	background: #fff;
+	font-size: 14px;
+	color: #3b75af;
+	text-decoration: none;
+	text-align: center;
+}
+.jboxnumber .jboxnumber-navs li>a:hover {
+	background: #6095c8;
+	color:#fff;
+}
+
+.jboxnumber .jboxnumber-navs li.active {
+	border: none;
+}
+
+.jboxnumber .jboxnumber-navs li.active>a {
+	height: 40px;
+	line-height: 40px;
+	background: #3b75af;
+	color: #fff;
+}
+
+.jboxnumber .jboxnumber-navs li.disabled>a {
+	opacity: .3;
+}
+
+.jboxnumber .jboxnumber-navs li.disabled>a:hover {
+	background: 0 0;
+}
+
+.jboxnumber .jboxnumber-navs li:first-child,
+.jboxnumber .jboxnumber-navs li:first-child>a {
+	border-radius: 3px 0 0 3px;
+}
+
+.jboxnumber .jboxnumber-navs li:last-child {
+	border-right: 1px solid #3b75af;
+	border-radius: 0 3px 3px 0;
+}
+
+.jboxnumber .jboxnumber-navs li:last-child>a {
+	border-radius: 0 3px 3px 0;
+}
+
+.jboxnumber .jboxnumber-nav {
+	height: 30px;
+	line-height: 30px;
+}
