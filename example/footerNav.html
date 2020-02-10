@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>jBoxNumber Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../dist/css/jboxnumber.css" rel="stylesheet" type="text/css"/>
+        <script src="../dist/js/jBoxNumber.js"></script>
+           
+    </head>
+    <body>
+        <div>jBoxNumber.js</div>
+        <div class="data-container" id="jboxnumber"> </div>
+        <script>
+       
+          jBoxNumber.get('home',{currentPage:1,totalPage: 100,pageEnd:7,boxHome:'#jboxnumber',send:function(i){console.log(i)}});
+       
+        </script>
+    </body>
+</html>
