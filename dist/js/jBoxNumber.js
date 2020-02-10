@@ -16,11 +16,11 @@ jBoxNumber.boxing = {};
 jBoxNumber.prototype = {
     setting: function (o) {
         this.currentPage = o.currentPage || 1;
-        this.totalPage = o.totalPage || 100;
+        this.totalPage = o.totalPage || 1;
         this.pageStart = o.pageStart || 1;
         this.pageEnd = o.pageEnd || 7;
         this.pageRange = 3;
-        this.pageElement = o.pageEnd;
+        this.pageElement = o.pageEnd || 7;
         this.html = '';
         this.pageLink = 'javascript:void(0)';
         this.ellipsisText = '...';
@@ -46,6 +46,10 @@ jBoxNumber.prototype = {
         else{
         this.boxHome = document.querySelector(o.boxHome) || document.getElementById(o.boxHome);
         }
+        if(this.pageEnd>this.totalPage){
+          this.pageEnd=this.totalPage;
+          this.pageElement=this.totalPage;
+        }
         return this.writePage();
     },
     writeElement:function(){
@@ -65,7 +69,10 @@ jBoxNumber.prototype = {
         }
         if (istance.pageEnd >= istance.totalPage) {
             istance.pageEnd = istance.totalPage;
-            istance.pageStart = istance.totalPage - istance.pageElement;
+            if(istance.totalPage-istance.pageElement<1)
+            istance.pageStart = istance.totalPage;
+            else
+            istance.pageStart = istance.totalPage - istance.pageElement;     
         }
         
         var i,html="";
