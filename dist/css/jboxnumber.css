@@ -58,10 +58,13 @@
 
 .jboxnumber .jboxnumber-navs li.disabled>a {
 	opacity: .8;
+	font-weight: 800;
+    	line-height: 32px;
 }
 
 .jboxnumber .jboxnumber-navs li.disabled>a:hover {
 	background: 0 0;
+	color:#3b75af;
 }
 
 .jboxnumber .jboxnumber-navs li:first-child,
