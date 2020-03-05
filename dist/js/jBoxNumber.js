@@ -70,7 +70,7 @@ jBoxNumber.prototype = {
         if (istance.pageEnd >= istance.totalPage) {
             istance.pageEnd = istance.totalPage;
             if(istance.totalPage-istance.pageElement<1)
-            istance.pageStart = istance.totalPage;
+            istance.pageStart = 1;
             else
             istance.pageStart = istance.totalPage - istance.pageElement;     
         }
